@@ -1,0 +1,11 @@
+.right-container {
+  background-color: #2F363D;
+  width: 50%;
+  height: 100%;
+  float:right;
+}
+.weather-data-container {
+  width: 100%;
+  margin: 100px auto auto;
+  max-width: 540px;
+}

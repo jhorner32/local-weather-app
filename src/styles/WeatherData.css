@@ -1,0 +1,45 @@
+.weather-data {
+  padding: 10px;
+  margin-top: 20px;
+}
+.weather-title {
+  color: #c27d82;
+}
+.weather-data p {
+  margin: 70px 0 30px 0;
+  font-size: 18px;
+  animation: fadeIn 2s;
+  color: #e7e7e7;
+}
+p.error {
+  position: relative;
+  bottom: 70px;
+  font-size: 15px;
+  color: #c27d82;
+  font-weight: 500;
+  animation: fadeIn .5s;
+}
+.weather-data hr {
+  width: 450px;
+  float: left;
+  margin: 0;
+  background-color: #656565;
+  border: none;
+  height: 1px;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

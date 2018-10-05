@@ -1,0 +1,8 @@
+.left-container {
+  background-image: url('../images/weather.jpg');
+  background-position: 40% 60%;
+  background-size:cover;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
