@@ -9,10 +9,10 @@
     "eslint": "^6.3.0",
     "lodash.template": "^4.5.0",
     "mem": "^5.1.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.1.1",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
