@@ -4,11 +4,16 @@
   "private": true,
   "dependencies": {
     "babel": "^6.23.0",
+    "braces": "^3.0.2",
     "classnames": "^2.2.6",
+    "eslint": "^6.3.0",
+    "lodash.template": "^4.5.0",
+    "mem": "^5.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
