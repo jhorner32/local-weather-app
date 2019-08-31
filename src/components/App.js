@@ -26,7 +26,6 @@ class App extends Component {
 
     // Dynamically fetch the weather data based upon the user input for city & country
     getWeather = async (city, country) => {
-        console.log('get weather ran')
         // template literals used on the fetch call.
         const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         // waiting to form the json until we fetch the api
@@ -54,7 +53,6 @@ class App extends Component {
     }
 
     resetWeather = () => {
-        console.log('before');
         this.setState({
             city: '',
             country: '',
@@ -64,7 +62,6 @@ class App extends Component {
             error: '',
             fetchedData: false,
         });
-        console.log("after");
     }
 
     // apart of the components being rendered below includes passing the weather api data that is sent to the RightContainer child component
