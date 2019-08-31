@@ -27,7 +27,7 @@ class App extends Component {
     // Dynamically fetch the weather data based upon the user input for city & country
     getWeather = async (city, country) => {
         // template literals used on the fetch call.
-        const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+        const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         // waiting to form the json until we fetch the api
         const data = await apiCall.json();
         // now that the data is fetched, we form the json before we run the if/else statement below
