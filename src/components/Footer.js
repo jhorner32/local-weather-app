@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer className="footer-container">
-            <p>&copy; {year} | <a href="https://www.jeffnhorner.com" target="_blank">Coded by Jeff Horner</a> | <a href="https://github.com/jeffnhorner/local-weather-app" target="_blank">View On Github</a></p>
+            <p>&copy; {year} | <a href="https://www.jeffnhorner.com" target="_blank" rel="noopener noreferrer">Coded by Jeff Horner</a> | <a href="https://github.com/jeffnhorner/local-weather-app" target="_blank" rel="noopener noreferrer">View On Github</a></p>
         </footer>
     )
 };
