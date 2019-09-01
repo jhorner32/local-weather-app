@@ -52,7 +52,7 @@ class App extends Component {
         }
     }
 
-    resetWeather = (city, country) => {
+    resetWeather = () => {
         this.setState({
             city: '',
             country: '',
