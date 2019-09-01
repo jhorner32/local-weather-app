@@ -27,7 +27,7 @@ class App extends Component {
     getWeather = async (city, country) => {
         // template literals used on the fetch call.
         // generate an api key @https://openweathermap.org/
-        const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`);
+        const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${process.env.REACT_APP_WEATHER_API_KEY || REACT_APP_WEATHER_API_KEY}&units=imperial`);
 
         // waiting to form the json until we fetch the api
         const data = await apiCall.json();
