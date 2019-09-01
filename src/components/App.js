@@ -4,8 +4,6 @@ import RightContainer from './RightContainer';
 
 import '../styles/App.css';
 
-const API_KEY = '8ddec521d125e33190069c4c5e381104';
-
 class App extends Component {
 
     constructor (props) {
@@ -27,7 +25,9 @@ class App extends Component {
     // Dynamically fetch the weather data based upon the user input for city & country
     getWeather = async (city, country) => {
         // template literals used on the fetch call.
-        const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+        // generate an api key @https://openweathermap.org/
+        const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`);
+
         // waiting to form the json until we fetch the api
         const data = await apiCall.json();
         // now that the data is fetched, we form the json before we run the if/else statement below
@@ -52,7 +52,7 @@ class App extends Component {
         }
     }
 
-    resetWeather = (city, country) => {
+    resetWeather = () => {
         this.setState({
             city: '',
             country: '',
