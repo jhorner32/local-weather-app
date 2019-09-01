@@ -8,7 +8,6 @@ import '../styles/App.css';
 class App extends Component {
 
     constructor (props) {
-        console.log(process.env.REACT_APP_WEATHER_API_KEY);
         super (props);
 
         this.state = {
