@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LeftContainer from './LeftContainer';
 import RightContainer from './RightContainer';
+import Footer from './Footer';
 
 import '../styles/App.css';
 
@@ -68,18 +69,21 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <LeftContainer />
-                <RightContainer
-                getWeather={this.getWeather}
-                resetWeather={this.resetWeather}
-                city={this.state.city}
-                country={this.state.country}
-                temperature={this.state.temperature}
-                humidity={this.state.humidity}
-                description={this.state.description}
-                error={this.state.error}
-                fetchedData={this.state.fetchedData}
-                />
+                <section className="app-container">
+                    <LeftContainer />
+                    <RightContainer
+                    getWeather={this.getWeather}
+                    resetWeather={this.resetWeather}
+                    city={this.state.city}
+                    country={this.state.country}
+                    temperature={this.state.temperature}
+                    humidity={this.state.humidity}
+                    description={this.state.description}
+                    error={this.state.error}
+                    fetchedData={this.state.fetchedData}
+                    />
+                </section>
+                <Footer />
             </div>
         );
     }
